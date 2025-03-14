@@ -1,0 +1,182 @@
+main {
+    background: rgb(33,28,132);
+    background: linear-gradient(100deg, rgba(33,28,132,1) 0%, rgba(42,51,194,1) 100%);
+    height: 100%;
+    display: flex;
+}
+
+.secCadastro {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(12, 11, 11, 0.264);
+    backdrop-filter: blur(1px);
+}
+
+input {
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.228);
+    border: none;
+    color: aliceblue;
+}
+
+p {
+    margin-top: 20px;
+    color: aliceblue;
+}
+
+.aviso {
+    margin-bottom: 20px;
+}
+
+.texto1 {
+    margin-right: 200px;
+    color: aliceblue;
+}
+
+a {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acessar {
+    background-color: #00ffae;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.acessar:hover {
+    background-color: #15ab9c;
+}
+
+.criarConta {
+    border: solid 1px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+}
+
+.criarConta:hover {
+    background-color: rgba(0, 0, 0, 0.312);
+}
+
+.BOTÂO {
+    border-radius: 5rem;
+    padding: 0.7rem 2rem;
+    font-size: 25px;
+    font-weight: bold;
+    width: 150px;
+    background-color: rgb(253, 0, 0);
+    color: antiquewhite;
+}
+
+.BOTÂO:hover {
+    background-color: rgb(176, 11, 11);
+}
+
+.secTitulo {
+    margin-top: 200px;
+    padding-left: 60px;
+    font-size: 50px;
+}
+
+.voltar {
+    background-color: #ff4747;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.voltar:hover {
+    background-color: #d63c3c;
+}
+
+.page-transition {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(33,28,132);
+    background: linear-gradient(100deg, rgba(33,28,132,1) 0%, rgba(42,51,194,1) 100%);
+    overflow: hidden;
+}
+
+.exit-login .secTitulo {
+    animation: moveRight 0.8s forwards;
+}
+
+.exit-login .secCadastro {
+    animation: moveLeft 0.8s forwards;
+}
+
+.enter-cadastro .secTitulo {
+    animation: moveLeft 0.8s forwards;
+}
+
+.enter-cadastro .secCadastro {
+    animation: moveRight 0.8s forwards;
+}
+
+@keyframes moveRight {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes moveLeft {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-100%); opacity: 0; }
+}
+
+body.page-transition {
+    opacity: 0;
+    transform: translateX(-50px);
+}
+
+body.page-transition.enter-page {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.exit-cadastro .secTitulo {
+    animation: moveLeft 0.8s forwards;
+}
+
+.exit-cadastro .secCadastro {
+    animation: moveRight 0.8s forwards;
+}

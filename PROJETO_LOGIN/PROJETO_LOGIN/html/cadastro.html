@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="/PROJETO_LOGIN/css/reset.css">
+    <link rel="stylesheet" href="/PROJETO_LOGIN/css/styleCad.css">
+
+
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <section class="secCadastro">
+            <h2 class="aviso">Cadastro</h2>
+            <p class="aviso">Preencha os campos com atenção.</p>
+
+            <form action="http://127.0.0.1:5000/cadastrar" method="post">
+                <input class="inputEmail" type="email" name="email" placeholder="Seu email aqui">
+                <input class="inputSenha" type="password" name="senha" placeholder="Sua senha aqui">
+                
+                <button type="submit" class="Cadastro" >Cadastrar</button>
+
+                <a href="/PROJETO_LOGIN/html/index.html" class="voltar" onclick="transitionPage(event, 'index.html', false)">Voltar</a>
+
+
+                
+
+            </form>
+
+
+        </section>
+
+        <section class="secTitulo">
+            <h1 class="texto1">CRIANDO SUA CONTA NO SITE</h1>
+            <a href="#" class="BOTÂO">BOTÂO</a>
+
+        </section>
+
+
+    </main>
+</body>
+    <script src="/script.js"></script>
+</html>
