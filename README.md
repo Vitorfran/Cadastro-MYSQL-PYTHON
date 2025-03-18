@@ -15,7 +15,7 @@ HTML e CSS (para interface do formulário)
 📌 Como Instalar e Rodar o Projeto
 
 Clonar o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git cd seu-repositorio
+gh repo clone Vitorfran/Cadastro-MYSQL-PYTHON
 
 Criar e Ativar um Ambiente Virtual (Opcional, mas Recomendado)
 No Windows
